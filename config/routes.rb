@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
 
   match('/', {:via => :get, :to => 'surveys#index'})
-  match('surveys/new', {:via => :get, :to => 'surveys#new'})
-  match('surveys', {:via => :post, :to => 'surveys#create'})
-  match('surveys/:id', {:via => :get, :to => 'surveys#show'})
-  match('surveys/:id/edit', {:via => :get, :to => 'surveys#edit'})
-  match('surveys/:id', {:via => [:patch, :put], :to => 'surveys#update'})
-  match('surveys/:id', {:via => :delete, :to => 'surveys#destroy'})
+
   resources :surveys do
     resources :questions
   end
