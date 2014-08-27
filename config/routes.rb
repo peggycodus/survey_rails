@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  resources :surveys
+
+  match('/', {:via => :get, :to => 'surveys#index'})
+
+  resources :surveys do
+    resources :questions
+  end
+
+  resources :questions do
+    resources :answers
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
