@@ -1,0 +1,28 @@
+$navbarBackground: #0e2c8e;
+$navbarBackgroundHighlight: #888;
+$navbarText: #fff;
+$navbarLinkColor: #eee;
+
+@import "bootstrap";
+
+body { padding-top: 60px; }
+
+.navbar .brand {
+  color: #0e2c8e;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+.footer {
+  text-align:center;
+  color:#007b55;
+  margin-top: 10px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+}
+

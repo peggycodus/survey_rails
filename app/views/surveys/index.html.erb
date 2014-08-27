@@ -1,0 +1,37 @@
+<div main class=container>
+<h1 class="page-header">Welcome to Survey Manager</h1>
+
+<div class=row>
+  <div span=1>
+    <table class="table table-hover table-condensed">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @surveys.each do |survey| %>
+          <tr>
+            <td width ="200" ><%= survey.name %></td>
+            <td width ="200"><%= survey.status %></td>
+            <td width="500"><div text="text-center">
+              <div class="btn-group"><%= button_to 'Show', survey, :class => "btn btn-small btn-primary"%><%= link_to 'Edit', edit_survey_path(survey),:class => "btn btn-small btn-success" %><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small btn-warning"%>
+              </div></div>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>
+
+<%= link_to "New contact", new_survey_path, :class=> "btn btn-large btn-primary" %>
+
+
+
+</div>
