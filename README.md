@@ -3,7 +3,7 @@ Use subscription manager to track your digital and paper subscriptions to magazi
 
 **Title: Subscription Manager
 **Author: Peggy Condon
-**Language/Framework: Rails, Ruby, Rspec, TDD
+**Language/Framework: Rails, Ruby, Rspec, Bootstrap
 **Revised: Aug 2014
 
 **Instructions for Basic Rails Assessment
@@ -11,7 +11,7 @@ Build a Rails app with at least two models and deploy it to Heroku. Include CSS 
 
 -Does your code continue to meet all of the standards from last week?
 -Are your routes RESTful?
--Is there a route for the homepage?
+-*-Is there a route for the homepage?
 -Is your application logic in the models, and do controllers do as little work as possible?
 -Do you properly use render and redirect?
 -Are your parameters nested?
@@ -21,9 +21,13 @@ Build a Rails app with at least two models and deploy it to Heroku. Include CSS 
 -Does the app use the asset pipeline for CSS?
 
 **Features:
--add/edit/delete a subscription
--add/edit/delete a payment
--view all subscriptions with renewal date by given time period
--view all deductible subscriptions and payments by year
--Find account information for login by subscription name
+-add/edit/delete a survey
+-add/edit/delete a question
+-add/edit/delete a response
+-view all surveys with their questions
+-view all questions with their responses and the correct one
+-Take a survey
+-view all the surveys I created
+-view all the survey I have taken
+-View Survey statistics
 

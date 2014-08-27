@@ -8,12 +8,11 @@ gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'autoprefixer-rails'
 
 group :development do
-
-  #gem 'binding_of_caller'
-  #gem 'quiet_assets'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'quiet_assets'
 end
 
 group :test, :development do
@@ -22,8 +21,9 @@ end
 
 group :test do
   gem 'shoulda-matchers'
-
 end
+
+
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+#gem 'spring',        group: :development
 
